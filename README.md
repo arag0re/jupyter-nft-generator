@@ -62,7 +62,7 @@ python -m pip install jupyter --user
 
 10. Add current PythonPath as PATH variable to .zshrc or .bashrc
 ```
-export PATH=/Users/<you>/Library/Python/3.9/bin:$PATH
+export PATH=/Users/<username>/Library/Python/3.9/bin:$PATH
 ```
 
 11. Run Jupyter in your nft-generator folder
