@@ -3,28 +3,61 @@ Python Notebook in Jupyter that will generate a series of unique images using a 
 
 ## Getting Started
 1. Install [Python](https://www.python.org/downloads/)
-
-2. Install PIP
-Download PIP get-pip.py
 ```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-
-python get-pip.py
+brew install python 
 ```
 
-3. Install Python Pillow
+2. Look where python is installed
+```
+ls -l /usr/local/bin/python*
+```
+The output is something like this:
+```
+lrwxr-xr-x  1 arag0re  admin  34 Sep 01 16:32 /usr/local/bin/python3 -> ../Cellar/python/3.9.6/bin/python3
+lrwxr-xr-x  1 arag0re  admin  41 Sep 01 16:32 /usr/local/bin/python3-config -> ../Cellar/python/3.9.6/bin/python3-config
+lrwxr-xr-x  1 arag0re  admin  36 Sep 01 16:32 /usr/local/bin/python3.9 -> ../Cellar/python/3.9.6/bin/python3.9
+lrwxr-xr-x  1 arag0re  admin  43 Sep 01 16:32 /usr/local/bin/python3.9-config -> ../Cellar/python/3.9.6/bin/python3.9-config
+lrwxr-xr-x  1 arag0re  admin  37 Sep 01 16:32 /usr/local/bin/python3.9m -> ../Cellar/python/3.9.6/bin/python3.9m
+lrwxr-xr-x  1 arag0re  admin  44 Sep 01 16:32 /usr/local/bin/python3.9m-config -> ../Cellar/python/3.9.6/bin/python3.9m-config
+```
+
+3. Change the default python symlink to the version you want to use from above. Note that, we only need to choose the one that end with python3.*.
+```
+ln -s -f /usr/local/bin/python3.9 /usr/local/bin/python
+```
+
+4. Check for installed python version
+```
+python --version
+```
+The output should be:
+```
+Python 3.9.6
+```
+
+5. Install PIP
+```
+sudo python -m ensurepip --default-pip
+```
+
+6. Update PIP
+```
+sudo python -m pip install --upgrade pip --user   
+```
+
+4. Install Python Pillow
 ```
 python -m pip install pillow --user
 ```
 
-4. Install Python display
+. Install Python display
 ```
-python3.9 -m pip install display --user
+python -m pip install display --user
 ```
 
 5. Install Jupyter Notebook
 ```
-python3.9 -m pip install jupyter --user
+python -m pip install jupyter --user
 ```
 
 6. Run Jupyter in your nft-generator folder
