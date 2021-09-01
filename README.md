@@ -1,7 +1,7 @@
 ## About
 Python Notebook in Jupyter that will generate a series of unique images using a collection of layers.
-### [Getting Started on MacOS](https://github.com/arag0re/nft-generator-leaderpunks/blob/main/README.md#getting-started-on-macos)
-### [Getting Started on Windows](https://github.com/arag0re/nft-generator-leaderpunks/blob/main/README.md#getting-started-on-windows)
+### [Getting Started on MacOS](#getting-started-on-macos)
+### [Getting Started on Windows](#getting-started-on-windows)
 
 ## Getting Started on MacOS
 1. Install [HomeBrew](https://brew.sh/)
