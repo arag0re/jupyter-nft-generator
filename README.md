@@ -1,7 +1,7 @@
 ## About
 Python Notebook in Jupyter that will generate a series of unique images using a collection of layers.
 
-## Getting Started
+## Getting Started on MacOS
 1. Install [Python](https://www.python.org/downloads/)
 ```
 brew install python 
