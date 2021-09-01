@@ -45,28 +45,33 @@ sudo python -m ensurepip --default-pip
 sudo python -m pip install --upgrade pip --user   
 ```
 
-4. Install Python Pillow
+7. Install Python Pillow
 ```
 python -m pip install pillow --user
 ```
 
-. Install Python display
+8. Install Python display
 ```
 python -m pip install display --user
 ```
 
-5. Install Jupyter Notebook
+9. Install Jupyter Notebook
 ```
 python -m pip install jupyter --user
 ```
 
-6. Run Jupyter in your nft-generator folder
+10. Add current PythonPath as PATH variable to .zshrc or .bashrc
+```
+export PATH=/Users/<you>/Library/Python/3.9/bin:$PATH
+```
+
+11. Run Jupyter in your nft-generator folder
 ```
 jupyter notebook
 ```
 
-7. Run the commands in [generate.ipynb] to generate images.
+12. Run the commands in [generate.ipynb] to generate images.
 
-8. First time you run notebook, it will ask you to install ipykernel, accept this.
+13. First time you run notebook, it will ask you to install ipykernel, accept this.
  
-9. If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds. 
+14. If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds. 
