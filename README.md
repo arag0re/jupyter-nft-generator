@@ -14,20 +14,20 @@ python get-pip.py
 
 3. Install Python Pillow
 ```
-pip install pillow
+python -m pip install pillow --user
 ```
 
 4. Install Python display
 ```
-pip install display
+python3.9 -m pip install display --user
 ```
 
 5. Install Jupyter Notebook
 ```
-pip install jupyter 
+python3.9 -m pip install jupyter --user
 ```
 
-6. Run Jupyter in your nft-image-generator folder
+6. Run Jupyter in your nft-generator folder
 ```
 jupyter notebook
 ```
