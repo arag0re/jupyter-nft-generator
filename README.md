@@ -2,12 +2,16 @@
 Python Notebook in Jupyter that will generate a series of unique images using a collection of layers.
 
 ## Getting Started on MacOS
-1. Install [Python](https://www.python.org/downloads/)
+1. Install [HomeBrew](https://brew.sh/)
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Install [Python](https://www.python.org/downloads/)
 ```
 brew install python 
 ```
 
-2. Look where python is installed
+3. Look where python is installed
 ```
 ls -l /usr/local/bin/python*
 ```
@@ -21,12 +25,12 @@ lrwxr-xr-x  1 arag0re  admin  37 Sep 01 16:32 /usr/local/bin/python3.9m -> ../Ce
 lrwxr-xr-x  1 arag0re  admin  44 Sep 01 16:32 /usr/local/bin/python3.9m-config -> ../Cellar/python/3.9.6/bin/python3.9m-config
 ```
 
-3. Change the default python symlink to the version you want to use from above. Note that, we only need to choose the one that end with python3.*.
+4. Change the default python symlink to the version you want to use from above. Note that, we only need to choose the one that end with python3.*.
 ```
 ln -s -f /usr/local/bin/python3.9 /usr/local/bin/python
 ```
 
-4. Check for installed python version
+5. Check for installed python version
 ```
 python --version
 ```
@@ -35,43 +39,78 @@ The output should be:
 Python 3.9.6
 ```
 
-5. Install PIP
+6. Install PIP
 ```
 sudo python -m ensurepip --default-pip
 ```
 
-6. Update PIP
+7. Update PIP
 ```
 sudo python -m pip install --upgrade pip --user   
 ```
 
-7. Install Python Pillow
+8. Install Python Pillow
 ```
 python -m pip install pillow --user
 ```
 
-8. Install Python display
+9. Install Python Display
 ```
 python -m pip install display --user
 ```
 
-9. Install Jupyter Notebook
+10. Install Jupyter Notebook
 ```
 python -m pip install jupyter --user
 ```
 
-10. Add current PythonPath as PATH variable to .zshrc or .bashrc
+11. Add current PythonPath as PATH variable to .zshrc or .bashrc
 ```
 export PATH=/Users/<username>/Library/Python/3.9/bin:$PATH
 ```
 
-11. Run Jupyter in your nft-generator folder
+12. Run Jupyter in your nft-generator folder
 ```
 jupyter notebook
 ```
 
-12. Run the commands in [generate.ipynb] to generate images.
+13. Run the commands in [generate.ipynb] to generate images.
 
-13. First time you run notebook, it will ask you to install ipykernel, accept this.
+14. First time you run notebook, it will ask you to install ipykernel, accept this.
  
-14. If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds. 
+15. If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds. 
+
+## Getting Started on Windows
+
+1. Install [Chocolatey](https://chocolatey.org/install)
+
+3. Install [Python](https://www.python.org/downloads/) by running cmd.exe as Admin and executing the following command:
+```
+choco install python
+```
+
+3. Install Python Pillow
+```
+pip install pillow
+```
+
+4. Install Python Display
+```
+pip install display
+```
+
+5. Install Jupyter Notebook
+```
+pip install jupyter
+```
+
+6. Run Jupyter in your nft-generator folder
+```
+jupyter notebook
+```
+
+7. Run the commands in [generate.ipynb] to generate images.
+
+8. First time you run notebook, it will ask you to install ipykernel, accept this.
+
+9. If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds.
